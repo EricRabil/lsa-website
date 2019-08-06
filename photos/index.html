@@ -30,13 +30,6 @@
 			scrollbar-color: white rgba(0, 0, 0, 0.2);
 		}
 
-		.image-container {
-			display: flex;
-			flex-flow: row;
-			left: 0;
-			overflow-x: scroll;
-		}
-
 		.main {
 			position: relative;
 		}
@@ -45,16 +38,19 @@
 			overflow-x: hidden;
 		}
 
+		.image-container {
+			left: 0;
+			overflow-x: scroll;
+			white-space: nowrap;
+		}
+
 		.image-container img {
-			min-height: 404px !important;
 			height: 404px !important;
-			max-height: 404px !important;
-			max-width: 141px !important;
 			width: 141px !important;
-			max-width: 141px !important;
 			object-fit: cover;
 			border: 0;
 			outline: 0;
+			display: inline-block;
 		}
 
 		.container-nice {
